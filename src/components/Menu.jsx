@@ -52,7 +52,7 @@ export default function Menu() {
             <button onClick={() => {
               setLoading(true)
               socket.emit('waitlist', username)
-            }}>Random Opponent<span>battle with unknown player</span></button>
+            }}>Random Opponent<span>play against a random player</span></button>
           </div>
           { showOnline && <div style={{position: 'fixed', top: '2em', left: '2em'}}>Online: {onlineUsers.length}</div> }
           { /* <div className='footer'>Sound from <a href="https://www.zapsplat.com">Zapsplat.com</a></div> */ }
